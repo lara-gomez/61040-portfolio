@@ -9,7 +9,11 @@ Some fun facts about me:
 2. I like to do yoga.
 3. I went on my first hike this summer in Seattle.
 
-![picture of snow leopard mama and baby](https://pbs.twimg.com/media/GzYlia3XMAAWfm4?format=jpg&name=4096x4096)
+These are some goals I have for the semester:
+1. Run along the Charles once a week.
+2. Improve my software design skills.
+
+![picture of a strawberry plant](https://cdn.britannica.com/22/75922-050-D3982BD0/flowers-fruits-garden-strawberry-plant-species.jpg)
 
 
 # Table of Contents
