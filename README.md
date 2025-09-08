@@ -13,7 +13,7 @@ These are some goals I have for the semester:
 1. Run along the Charles once a week.
 2. Improve my software design skills.
 
-![picture of a strawberry plant](https://cdn.britannica.com/22/75922-050-D3982BD0/flowers-fruits-garden-strawberry-plant-species.jpg)
+<img src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2023_19/1993690/strawberry-shortcake-mc-1x1-230511.jpg" alt="picture of strawberry shortcake" width="400"/>
 
 
 # Table of Contents
