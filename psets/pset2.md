@@ -45,3 +45,105 @@
 
 ## Extending the Design
 
+1. Design a couple of additional concepts to realize this extension, and write them out in full (but including only the essential actions and state). It should not be necessary to make any changes to the existing concepts.
+
+**concept** User[UrlShortening]
+
+**purpose** support multiple users and manage the shortened urls they have registered
+
+**principle** after registering a url, associate the url with the user who created this shortening
+
+**state** 
+
+    a set of Users with
+
+        a set of registeredUrls UrlShortenings
+
+**actions** 
+
+    associateShortening (user: User, shortUrl: String): (registeredUrl: UrlShortening)
+
+        requires: the user exists and the shortUrl has been created
+
+        effects: adds the shortUrl to the set of registeredUrls for the given user, returns the shortened url
+
+    checkOwner (user: User, shortUrl: String): (check: Flag)
+
+        requires: user exists
+
+        effects: returns true if the shortUrl is registered by the given user; false otherwise
+
+
+**concept** Analytics[UrlShortening]
+
+**purpose** access information about how short links are used
+
+**principle** keep track of the count of accesses for a short url, such that every time a user accesses the url, the access count increases. Only the user who registered the shortening should be able to view the total count.
+
+**state**
+
+    a set of shortUrls UrlShortenings with
+
+        an accessCount Number
+
+**actions**
+
+    accessAnalytics (user: User, shortUrl: String): (accessCount: Number)
+
+        requires: the user and shortUrl exist and the given user registered the shortUrl
+
+        effects: return the accessCount for the shortUrl
+
+    increaseAccessCount (shortUrl: String): (accessCount: Number)
+
+        requires: shortUrl exists
+
+        effects: accessCount += 1, return the updated count
+
+2. Specify three essential synchronizations with your new concepts: one that happens when shortenings are created; one when shortenings are translated to targets; and one when a user examines analytics.
+
+**sync** create
+
+**when** 
+
+    Request.shortenUrl (user: User)
+    UrlShortening.register (): (shortUrl)
+
+**then** User.associateShortening (user, shortUrl)
+
+
+**sync** translate
+
+**when** UrlShortening.lookup (shortUrl)
+
+**then** Analytics.increaseAccessCount (shortUrl)
+
+
+**sync** examineAnalytics
+
+**when** Request.accessAnalytics(user, shortUrl)
+
+**then** Analytics.accessAnalytics (user, shortUrl)
+
+3. As a way to assess the modularity of your solution, consider each of the following feature requests, to be included along with analytics. For each one, outline how it might be realized (eg, by changing or adding a concept or a sync), or argue that the feature would be undesirable and should not be included:
+
+- Allowing users to choose their own short URLs
+
+    Within UrlShortening, the register action already takes in all the parameters to support a custom short URL. The existing register sync calls NonceGeneration.generate () to produce the nonce that will be used as the shortUrlSuffix for UrlShortening.register. We will add another sync called createCustomLink, such that when Request.shortenUrl (targetUrl, shortUrlBase, shortUrlSuffix), then UrlShortening.register (shortUrlSuffix, shortUrlBase, targetUrl). This way, there is support for both randomized nonces for the short url suffix or support for completely customized short URLs that users may prefer. This modification is already supported by the requires section for UrlShortening.register since it ensures uniqueness.
+
+- Using the “word as nonce” strategy to generate more memorable short URLs
+
+    To implement the word as nonce strategy, we will modify the NonceGeneration concept. The state would include a set of Contexts, each with its own used set of Strings. In addition, we can maintain a global set of Words, which are strings representing memorable words we may use as nonces. NonceGeneration.generate() would then return a word from Words that is not in the context's used set to preserve uniqueness, then add that word to the used set. Since we are only modifying one function of NonceGeneration internally, the change remains modular given that the type of the output is still represented the same way.
+
+- Including the target URL in analytics, so that lookups of different short URLs can be grouped together when they refer to the same target URL
+
+    We will extend our Analytics concept to include the target URL. Since both the short URL and the target URL are strings, we will generalize the state to maintain a single set of Url Strings, each with an accessCount number. Both actions for Analytics will take in any URL type and increase the access count or return the count. In the translate sync defined above, use the targetUrl return from UrlShortening.lookup (shortUrl) to increase the access count for both the shortUrl and the targetUrl.
+
+- Generate short URLs that are not easily guessed
+
+    Since we decided to use the word as nonce strategy above, we are choosing to prioritize usability and clarity over the security benefits provided by hard-to-guess short URLs. This design is less intuitive for users, and more prone to typos that may decrease the quality of user experience. It may potentially defeat the purpose of short URLs to begin with, making it more difficult to access the not easily guessable link over the original target URL.
+
+- Supporting reporting of analytics to creators of short URLs who have not registered as user
+
+    It is difficult to manage analytics for creators who have not already registered as a user. There is no association that can readily provide whether they are confirmed as a creator of the short URL, making it unreasonable to provide analytics for such creators. In the same vein, a user would most likely want to manage all of their short URLs in one place, which is better supported through a registered account. In the design for this feature, we would have to duplicate the functionality of the User, thus violating modularity by splitting the same logic across two concepts.
+
