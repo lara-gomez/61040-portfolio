@@ -103,7 +103,7 @@ produce music)
 
 - Impact: The reviewer and the friend will most likely have negative consequences from poorly crafted
 reviews, since they might miss out on music they might have enjoyed. The artist will also suffer
-consequences depending on the reviews. Good reviews could lead to increased popularities, whereas
+consequences depending on the reviews. Good reviews could lead to increased popularity, whereas
 bad reviews could taint their reputation. In the same vain, well written reviews and ratings for songs
 will allow users to diversify their music taste and benefit from seeing their friends' song recommendations.
 
@@ -115,8 +115,7 @@ person who is looking to attend city events and to find community)
 appropriate amount of resources required; therefore, they want to identify users who would be most
 interested in attending. Users want to find events that maximize their personal enjoyment, leading
 to increased positive interactions with the event organizers. The opposite is true when enjoyment is
-minimal. Events that attract more users could allow these organizers to acquire more funding from the city. The city also benefits from having citizens who are happier since they will be likely to stay in
-the city for longer periods of time and contribute financially.
+minimal. Events that attract more users could allow these organizers to acquire more funding from the city. The city also benefits from having citizens who are happier since they will be likely to stay in the city for longer periods of time and contribute financially.
 
 ### Find Dinner Party Theme and Menu
 - Stakeholders: Host (the person hosting the dinner party), friend (a person attending the dinner party),
@@ -155,7 +154,7 @@ including but not limited to outdated UIs, lacking databases, and unintuitive se
 3. [Nextdoor](https://www.meetup.com/) A neighborhood posting forum to make connections and post about local news and services. It is more location focused than just focusing on interests and hobbies that people may have in common.
 4. [Decision Fatigue in Event Planning: How to Stay Sharp](https://everwall.com/blog/decision-fatigue-in-event-planning/) Too many decisions regarding events leads to increased stressed and decreased effectiveness.
 5. [What Fuels Our Fear of Missing Out](https://www.aau.edu/research-scholarship/featured-research-topics/what-fuels-our-fear-missing-out) FOMO is more tied to the fear of making valued connections and memories rather than the activity itself, similar to how people want to attend events to make more connections in a city and find community.
-6. [What are your biggest complaints with Eventbrite?](https://www.reddit.com/r/Eventbrite/comments/1l5vpr6/what_are_your_biggest_complaints_with_eventbrite/) Eventbrite doesn't allow users to filter out for groups they are interested in only, or have the ability to mark certain groups or events as "not interersted" on the discover page.
+6. [What are your biggest complaints with Eventbrite?](https://www.reddit.com/r/Eventbrite/comments/1l5vpr6/what_are_your_biggest_complaints_with_eventbrite/) Eventbrite doesn't allow users to filter out for groups they are interested in only, or have the ability to mark certain groups or events as "not interested" on the discover page.
 7. [How to Increase Event Attendance: 15 Proven Strategies](https://spotme.com/blog/event-attendance/): Despite well planned out events on the side of event organizers, lack of attendance can be caused due to poor advertisement, competing events that overlap, and inconvenient times.
 8. [How to find interesting events and get a group of people to join?](https://www.reddit.com/r/BostonSocialClub/comments/1inwkig/how_to_find_interesting_events_and_get_a_group_of/) Evidence of demand for people to have a unified place to find events based on hobbies/interests and organize a group to attend.
 
@@ -180,7 +179,7 @@ including but not limited to outdated UIs, lacking databases, and unintuitive se
 
 2. Interests Tracking: Keep track of all your hobbies in interests to have better recommendations on the discovery page. These should be prompted to select at the beginning of account creation, but can be modified at any time.
 
-3. Past attended events and reviews: Review all of the events that you have attended. Other users and event organizers can access these reviews, which can be posted anonymously. Post about the quality of the event and give any feedback. This is useful for recommedning future events for you to attend.
+3. Past attended events and reviews: Review all of the events that you have attended. Other users and event organizers can access these reviews, which can be posted anonymously. Post about the quality of the event and give any feedback. This is useful for recommending future events for you to attend.
 
 ### Find Dinner Party Theme and Menu
 1. Theme Suggestions: Generate themes either randomly or based on the success of past dinner party themes. Can be suggested on the basis of desired recipes, or through given words and phrases that are input. Guests should also be able to suggest themes for the host to try.
