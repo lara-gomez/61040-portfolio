@@ -22,3 +22,5 @@ These are some goals I have for the semester:
 [Link to Problem Set 1](psets/pset1.md)
 
 [Link to Problem Set 2](psets/pset2.md)
+
+[Link to Assignment 2](assignments/assignment2.md)
