@@ -378,7 +378,7 @@ User Profile concept contains information pertaining to the user only, EventMana
 
 ## UI Sketches
 
-![UI Sketch](/ui_sketch.JPG)
+![UI Sketch](ui_sketch.JPG)
 
 ## User Journey
 
