@@ -142,16 +142,10 @@ including but not limited to outdated UIs, lacking databases, and unintuitive se
 
 7. [Beli](https://beliapp.com/) An app dedicated to tracking and sharing your favorite restaurants with your friends. Get access to personalized recs for restaurants. This is another example of a demand for users who want to engage with their friends' reviews in another aspect of their life. There is demand for movies and restaurants, so music is a natural expansion from there.
 
-8. 
-
-9. 
-
-10. 
-
 ### Event Overload
 1. [How do you make friends as an adult after college?](https://www.reddit.com/r/socialskills/comments/113ezs3/how_do_you_make_friends_as_an_adult_after_college/) Reddit users discuss the importance of repeated exposure to make friends when starting again in a new city post graduating.
 2. [Meetup](https://www.meetup.com/) A comparable where people can sign up to attend events based on hobbies together. However, paywalls make the service difficult to use and there are no features to check people into events in real time or live updates for events.
-3. [Nextdoor](https://www.meetup.com/) A neighborhood posting forum to make connections and post about local news and services. It is more location focused than just focusing on interests and hobbies that people may have in common.
+3. [Nextdoor](https://www.nextdoor.com/) A neighborhood posting forum to make connections and post about local news and services. It is more location focused than just focusing on interests and hobbies that people may have in common.
 4. [Decision Fatigue in Event Planning: How to Stay Sharp](https://everwall.com/blog/decision-fatigue-in-event-planning/) Too many decisions regarding events leads to increased stressed and decreased effectiveness.
 5. [What Fuels Our Fear of Missing Out](https://www.aau.edu/research-scholarship/featured-research-topics/what-fuels-our-fear-missing-out) FOMO is more tied to the fear of making valued connections and memories rather than the activity itself, similar to how people want to attend events to make more connections in a city and find community.
 6. [What are your biggest complaints with Eventbrite?](https://www.reddit.com/r/Eventbrite/comments/1l5vpr6/what_are_your_biggest_complaints_with_eventbrite/) Eventbrite doesn't allow users to filter out for groups they are interested in only, or have the ability to mark certain groups or events as "not interested" on the discover page.
@@ -175,7 +169,7 @@ including but not limited to outdated UIs, lacking databases, and unintuitive se
 3. Friend Feed: Access all friend reviews and ratings on one easy page. Reviews should be sorted based on time across all friends, but there should also be an option to sort based on album, artist, or genre.
 
 ### Event Overload
-1. Discovery Page: Have centralized feed with all events that correspond to your selected hobbies and past attended events. Mark activities as either interested or not interested for better recommendations in the future. Also keep track of whether you friends are attending certain events or not.
+1. Discovery Page: Have centralized feed with all events that correspond to your selected hobbies and past attended events. Mark activities as either interested or not interested for better recommendations in the future. Also keep track of whether your friends are attending certain events or not.
 
 2. Interests Tracking: Keep track of all your hobbies in interests to have better recommendations on the discovery page. These should be prompted to select at the beginning of account creation, but can be modified at any time.
 
